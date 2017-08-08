@@ -14,7 +14,9 @@
 *.DS_Store
 .AppleDouble
 .LSOverride
-
+node_modules
+client/dist
+.idea
 # Icon must end with two \r
 Icon
 

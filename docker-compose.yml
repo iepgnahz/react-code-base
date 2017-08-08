@@ -1,0 +1,15 @@
+version: "2"
+services:
+  nginx:
+    image: nginx:1.13.3
+    container_name: code_base_web
+    ports:
+      - 9996:80
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/images:/var/images
+      - ./client/dist:/var/web
+    networks:
+      main:
+networks:
+  main:
